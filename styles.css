@@ -295,33 +295,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%;        /* Makes it responsive */
+    max-width: 600px;   /* Increase this for a bigger image */
+    height: auto;       /* Maintains aspect ratio */
+    border-radius: 0.5rem;
 }
+
 
 .stat-card {
     position: absolute;
-    bottom: -1.5rem;
-    right: -1.5rem;
-    background-color: var(--color-emerald-500);
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(65, 220, 132, 0.671); /* 0.8 = slight transparency */
+    color: white;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    padding: 1rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    color: var(--color-white);
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+    max-width: 200px;
 }
 
+
 .stat-number {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.5rem;      /* Bigger text */
+    font-weight: 500;     /* Bold */
 }
 
 .stat-text {
-    font-size: 0.875rem;
+    font-size: 1rem;      /* Adjust as needed */
+    font-weight: 500;     /* Medium bold */
+    margin-top: 0.5rem;   /* Adds spacing */
 }
+
 
 /* About Section */
 .about-section {
