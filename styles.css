@@ -733,7 +733,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-gray-100);
     padding: 1.5rem;
     border-radius: 0.75rem;
+    width: 100%; /* Add this line */
+    grid-column: 1 / -1; /* Add this line */    
 }
+
 
 .impact-section h3 {
     font-size: 1.25rem;
@@ -745,7 +748,10 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    max-width: 100%; /* Add this line */
+    margin: 0 auto; /* Add this line */
 }
+
 
 .impact-card {
     background-color: var(--color-white);
@@ -1382,6 +1388,16 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .treatment-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Add these new blocks below */
+    .impact-section {
+        grid-column: 1 / -1;
+        margin-top: 2rem;
+    }
+    
+    .impact-cards {
         grid-template-columns: repeat(3, 1fr);
     }
 }
